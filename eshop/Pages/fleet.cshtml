@@ -1,0 +1,122 @@
+@page
+@model fleetModel
+@{
+    ViewData["Title"] = "Fleet";
+}
+
+
+
+<style>
+    .card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+
+
+<div class="container py-5">
+    <h1 class="text-center mb-4 text-primary fw-bold">Our Fleet</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Car Cards -->
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car1.jpg" class="card-img-top rounded" alt="Car 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 1</h5>
+                    <p class="card-text text-muted">Luxury & Comfort</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car2.jpg" class="card-img-top rounded" alt="Car 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 2</h5>
+                    <p class="card-text text-muted">Fast & Stylish</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car3.jpg" class="card-img-top rounded" alt="Car 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 3</h5>
+                    <p class="card-text text-muted">Safe & Reliable</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car4.jpg" class="card-img-top rounded" alt="Car 4">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 4</h5>
+                    <p class="card-text text-muted">Sporty & Modern</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car5.jpg" class="card-img-top rounded" alt="Car 5">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 5</h5>
+                    <p class="card-text text-muted">Spacious & Family-friendly</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car6.jpg" class="card-img-top rounded" alt="Car 6">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 6</h5>
+                    <p class="card-text text-muted">Electric & Eco-friendly</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car7.jpg" class="card-img-top rounded" alt="Car 7">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 7</h5>
+                    <p class="card-text text-muted">Small and compact</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car8.jpg" class="card-img-top rounded" alt="Car 8">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 8</h5>
+                    <p class="card-text text-muted">Affordable & Fuel-efficient</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg border-0">
+                <img src="carimages/car9.jpg" class="card-img-top rounded" alt="Car 9">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Car Model 9</h5>
+                    <p class="card-text text-muted">Adventure</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

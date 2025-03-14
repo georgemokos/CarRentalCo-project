@@ -1,0 +1,128 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - CarRentalCo</title>
+  <style>
+    .header-section {
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .accordion-button:not(.collapsed) {
+      color: #0d6efd;
+      background-color: #e7f1ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5 mb-5">
+    <!-- Header Section -->
+    <div class="header-section mb-5">
+      <h1>Privacy Policy</h1>
+      <p class="lead">Your privacy is important to us at CarRentalCo.</p>
+    </div>
+
+    <!-- Accordion for Policy Sections -->
+    <div class="accordion" id="privacyAccordion">
+      <!-- Introduction -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingIntro">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">
+            Introduction
+          </button>
+        </h2>
+        <div id="collapseIntro" class="accordion-collapse collapse show" aria-labelledby="headingIntro" data-bs-parent="#privacyAccordion">
+          <div class="accordion-body">
+            <p>Welcome to CarRentalCo. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you visit our website or use our services.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Information We Collect -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingInfo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+            Information We Collect
+          </button>
+        </h2>
+        <div id="collapseInfo" class="accordion-collapse collapse" aria-labelledby="headingInfo" data-bs-parent="#privacyAccordion">
+          <div class="accordion-body">
+            <p>We may collect personal data such as your name, email address, phone number, and payment information when you make a booking. Additionally, non-personal data such as browser type and operating system is collected for analytics purposes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- How We Use Your Information -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingUse">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUse" aria-expanded="false" aria-controls="collapseUse">
+            How We Use Your Information
+          </button>
+        </h2>
+        <div id="collapseUse" class="accordion-collapse collapse" aria-labelledby="headingUse" data-bs-parent="#privacyAccordion">
+          <div class="accordion-body">
+            <p>Your information is used to process bookings, manage your account, enhance our services, and, with your consent, send promotional communications. We ensure your data is used only in compliance with applicable laws.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Security -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSecurity">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecurity" aria-expanded="false" aria-controls="collapseSecurity">
+            Data Security
+          </button>
+        </h2>
+        <div id="collapseSecurity" class="accordion-collapse collapse" aria-labelledby="headingSecurity" data-bs-parent="#privacyAccordion">
+          <div class="accordion-body">
+            <p>We implement robust security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. This includes encryption and secure server storage.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Your Rights -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingRights">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRights" aria-expanded="false" aria-controls="collapseRights">
+            Your Rights
+          </button>
+        </h2>
+        <div id="collapseRights" class="accordion-collapse collapse" aria-labelledby="headingRights" data-bs-parent="#privacyAccordion">
+          <div class="accordion-body">
+            <p>You have the right to access, correct, or delete your personal information. If you have any questions or wish to exercise these rights, please contact our support team at privacy@carrentalco.com.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingContact">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
+            Contact Us
+          </button>
+        </h2>
+        <div id="collapseContact" class="accordion-collapse collapse" aria-labelledby="headingContact" data-bs-parent="#privacyAccordion">
+          <div class="accordion-body">
+            <p>If you have any questions or concerns about our Privacy Policy, please contact us at privacy@carrentalco.com.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-outline-secondary">Back to Top</a>
+    </div>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,208 @@
+@page
+@model aboutusModel
+@{
+    ViewData["Title"] = "About us ";
+}
+
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - CarRentalCo</title>
+    <!-- Bootstrap CSS (using Bootstrap 5) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Optional Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet" />
+ 
+  <style>
+    /* Custom Styles */
+    .hero {
+      background: url('images/picture1.jpg') no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      position: relative;
+      color: #fff;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+
+
+
+
+
+  <section class="hero d-flex align-items-center mt-3">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center">
+      <h1 class="display-4">CarRentalCo</h1>
+      <p class="lead">Your trusted partner in travel and mobility.</p>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2>Our Story</h2>
+          <p class="text-muted">From a humble beginning to a nationwide leader in car rentals, our journey is one of passion, innovation, and dedication.</p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/picture2.jpg" alt="Our Story" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3>Driven by Excellence</h3>
+          <p>At CarRentalCo, every journey is personal. We started as a small local business and evolved into a cutting-edge service provider offering a wide range of vehicles tailored to your needs.</p>
+          <p>Our mission is to deliver quality, safety, and comfort with every rental. Utilizing state-of-the-art technology and continuous innovation, we ensure a seamless experience for every customer—whether it’s a business trip or a family vacation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-speedometer2 display-4 text-primary"></i>
+              <h5 class="card-title mt-3">Fast & Reliable</h5>
+              <p class="card-text">Experience a smooth and efficient booking process that gets you on the road in minutes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-shield-check display-4 text-success"></i>
+              <h5 class="card-title mt-3">Safety First</h5>
+              <p class="card-text">Our vehicles are maintained to the highest safety standards, ensuring your peace of mind.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-people display-4 text-warning"></i>
+              <h5 class="card-title mt-3">Customer Focused</h5>
+              <p class="card-text">Our dedicated team is here to provide you with personalized service, ensuring a hassle-free experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Team Section -->
+  <section class="py-5 mb-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2>Meet Our Team</h2>
+          <p class="text-muted">Our team of passionate professionals is committed to delivering excellence in every ride.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/person3.jpg" class="card-img-top fixed-img" alt="Jane Doe">
+            <div class="card-body text-center">
+              <h5 class="card-title">Jane Doe</h5>
+              <p class="card-text">Founder & CEO</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal1">View Profile</button>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/person2.jpg" class="card-img-top fixed-img" alt="John Smith">
+            <div class="card-body text-center">
+              <h5 class="card-title">John Smith</h5>
+              <p class="card-text">Head of Operations</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal2">View Profile</button>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/person1.jpg" class="card-img-top fixed-img" alt="Emily White">
+            <div class="card-body text-center">
+              <h5 class="card-title">Emily White</h5>
+              <p class="card-text">Customer Relations Manager</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal3">View Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Member Modals -->
+  <!-- Modal for Jane Doe -->
+  <div class="modal fade" id="teamModal1" tabindex="-1" aria-labelledby="teamModal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="teamModal1Label" class="modal-title">Jane Doe - Founder & CEO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Jane founded CarRentalCo with a vision to revolutionize the car rental experience. Her leadership and commitment to excellence drive our continuous growth and innovation.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for John Smith -->
+  <div class="modal fade" id="teamModal2" tabindex="-1" aria-labelledby="teamModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="teamModal2Label" class="modal-title">John Smith - Head of Operations</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>John oversees our day-to-day operations ensuring every process is efficient and every customer experience is outstanding.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Emily White -->
+  <div class="modal fade" id="teamModal3" tabindex="-1" aria-labelledby="teamModal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="teamModal3Label" class="modal-title">Emily White - Customer Relations Manager</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Emily is passionate about ensuring our customers receive personalized care and support, making every rental experience a positive one.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
